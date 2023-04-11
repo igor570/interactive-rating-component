@@ -1,0 +1,182 @@
+/* ============ Default Styling ============  */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+:root {
+    --medium-grey-1: rgb(40, 46, 55);
+    --medium-grey-2: rgb(106, 114, 126);
+    --dark-grey: #262F38;
+    --base-orange: hsl(25, 97%, 53%);
+    --base-white: white;
+    --medium-blue: rgb(25, 30, 39);
+    --very-dark-blue: hsl(216, 12%, 8%);
+  }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+}
+
+
+
+/* ============ Container Styling ============  */
+
+.ratingContainer {
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--medium-blue);
+    padding: 3rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--medium-grey-1);
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+}
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--base-white);
+    
+}
+
+
+.paragraph {
+    margin-bottom: 1rem;
+    color:rgb(106, 114, 126);
+    font-size: 1.2rem;
+}
+
+.options {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    z-index: 2;
+    
+}
+
+
+.optionBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--medium-grey-1);
+    color: var(--medium-grey-2);
+    z-index: 2;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+
+}
+
+.optionBackground:hover {
+    background-color: var(--medium-grey-2);
+    color: var(--base-white);
+    transition: .1s ease-in;
+    cursor: pointer;
+    
+}
+
+.optionBackground:focus {
+    background-color: var(--base-orange);
+    color: var(--medium-grey-1);
+    transition: .1s ease-in;
+    cursor: pointer;
+    
+}
+
+#submitButton {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--base-orange);
+    color: var(--base-white);
+    height: 3.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+#submitButton:hover {
+    color: var(--base-orange);
+    background-color: var(--base-white);
+    cursor: pointer;
+    transition: .1s ease-in;
+
+}
+
+#submitButton:active {
+    color: var(--base-orange);
+    background-color: var(--base-white);
+    outline: var(--base-orange) solid .1rem;
+    cursor: pointer;
+    transition: .1s ease-in;
+
+}
+
+
+/* ============ Button Press Styling ============  */
+
+.ratingContainer.newState {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--medium-blue);
+    padding: 3rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    z-index: 1;
+    outline: var(--base-orange) solid 1px;
+}
+
+.heading.newState {
+    text-align: center;
+
+}
+
+.paragraph.newState {
+    text-align: center;
+}
+
+.newImageStyle {
+    width: 10rem;
+    height: auto;
+    margin-bottom: .5rem;
+}
+
+.newDivStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-grey);
+    color: var(--base-orange);
+    margin: 2rem auto;
+    padding: .5rem 1rem; 
+    border-radius: 100rem;
+}
+
+
+
